@@ -944,6 +944,18 @@ wheels = [
 ]
 
 [[package]]
+name = "opencc"
+version = "1.3.0"
+source = { registry = "https://mirrors.aliyun.com/pypi/simple" }
+sdist = { url = "https://mirrors.aliyun.com/pypi/packages/e7/5a/1ce3ff524f4e1735129b9b585af2fb9278eeb5880631e7c7c82dcf0fc089/opencc-1.3.0.tar.gz", hash = "sha256:bb7105c10ee90c9ba7493a099ac5e611ceab464b895c0584bd9ef304c10950fd" }
+wheels = [
+    { url = "https://mirrors.aliyun.com/pypi/packages/99/79/aee359497424dc1f59fd40fa8cc8b0a077c36501bb20e4ca0f8df1cdc7dd/opencc-1.3.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:7b77e2738d21250f7a87ca9b07c6e91f4af837f8c10d78303165856c982f57f0" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/5c/31/76588f650e3d8e4dbb145a2a2508e3d7b1c7c5d6003a0ba33c91a06d9e1c/opencc-1.3.0-cp313-cp313-manylinux2014_x86_64.whl", hash = "sha256:b9f9d459d101888919b70e50a5dc8ad404cfee8c937e51011d618a380105899f" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/02/5d/c9dacdf739d41f8b1ea95d5abdb165d2590b05819eddb231778bdc8e4314/opencc-1.3.0-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:10f369b744bb0cbcb9ff61f9f8aaaca82ecf368a860ddeae94416811d6dde144" },
+    { url = "https://mirrors.aliyun.com/pypi/packages/cb/90/afb6ae7583284db2516f0bf58a5ae5382f56804b27db34009ff0dbff4377/opencc-1.3.0-cp314-cp314-manylinux2014_x86_64.whl", hash = "sha256:ae0b3c884b20ad3bfaf912b2e8d2aa5e2e29f0dc6916b1d3d86962064bc9db97" },
+]
+
+[[package]]
 name = "packaging"
 version = "26.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple" }
@@ -1202,6 +1214,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "datasets" },
     { name = "hf-transfer" },
+    { name = "opencc" },
     { name = "python-dotenv" },
     { name = "sentencepiece" },
     { name = "torch" },
@@ -1212,6 +1225,7 @@ dependencies = [
 requires-dist = [
     { name = "datasets", specifier = ">=4.8.4" },
     { name = "hf-transfer", specifier = ">=0.1.9" },
+    { name = "opencc", specifier = ">=1.3.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "sentencepiece", specifier = ">=0.2.1" },
     { name = "torch", specifier = ">=2.11.0" },
