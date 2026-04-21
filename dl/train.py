@@ -32,6 +32,7 @@ def train_model(model, train_loader, epochs=EPOCHS, lr=LR):
             scheduler.step()
             total_loss += loss.item()
         print(f"Epoch {epoch+1}/{epochs} | Loss: {total_loss/len(train_loader):.4f}")
+        torch.save(model.state_dict(), SAVE_PATH.format('epoch_%d' % epoch))
     
-    torch.save(model.state_dict(), SAVE_PATH)
+    torch.save(model.state_dict(), SAVE_PATH.format('fin'))
     return model

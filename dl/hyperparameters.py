@@ -5,7 +5,7 @@ SRC_FILE = "corpus/datasets/train.skz"
 TGT_FILE = "corpus/datasets/train.zh"
 SP_SRC_MODEL = "corpus/datasets/sp_src.model"
 SP_TGT_MODEL = "corpus/datasets/sp_zh.model"
-SAVE_PATH = "models/model.pt"
+SAVE_PATH = "models/model_{}.pt"
 
 # dataloader
 # DATA_LOADER_BATCH_SIZE = 32

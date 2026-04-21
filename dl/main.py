@@ -12,8 +12,8 @@ loader = DataLoader(
     batch_size=BATCH_SIZE, 
     shuffle=True, 
     collate_fn=collate_fn, 
-    num_workers=NUM_WORKERS, 
-    pin_memory=True
+    # num_workers=NUM_WORKERS, 
+    # pin_memory=True
 )
 
 model = Seq2SeqTransformer(
