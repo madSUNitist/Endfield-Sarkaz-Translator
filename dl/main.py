@@ -7,7 +7,14 @@ from hyperparameters import *
 from torch.utils.data import DataLoader
 
 dataset = TranslationDataset()
-loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True, collate_fn=collate_fn)
+loader = DataLoader(
+    dataset, 
+    batch_size=BATCH_SIZE, 
+    shuffle=True, 
+    collate_fn=collate_fn, 
+    num_workers=NUM_WORKERS, 
+    pin_memory=True
+)
 
 model = Seq2SeqTransformer(
     src_vocab=src_sp.vocab_size(),

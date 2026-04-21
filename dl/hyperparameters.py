@@ -8,8 +8,9 @@ SP_TGT_MODEL = "corpus/datasets/sp_zh.model"
 SAVE_PATH = "models/model.pt"
 
 # dataloader
-DATA_LOADER_BATCH_SIZE = 32
+# DATA_LOADER_BATCH_SIZE = 32
 MAX_SEQ_LEN = 128
+NUM_WORKERS = 4
 
 # model
 D_MODEL = 256
